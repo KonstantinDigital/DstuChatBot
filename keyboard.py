@@ -2,11 +2,11 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, KeyboardBu
 
 
 menu = InlineKeyboardMarkup(inline_keyboard=[
-    [InlineKeyboardButton(text="📝 Генерировать текст", callback_data="generate_text")],
-    [InlineKeyboardButton(text="🖼 Генерировать изображение", callback_data="generate_image")],
+    [InlineKeyboardButton(text="💬 Генерировать текст", callback_data="generate_text")],
+    [InlineKeyboardButton(text="🎨 Генерировать изображение", callback_data="generate_image")],
 ])
-exit_kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="◀️ Выйти в меню")]],
+exit_kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="🏡 Выйти в меню")]],
                               resize_keyboard=True)
 iexit_kb = InlineKeyboardMarkup(inline_keyboard=[
-    [InlineKeyboardButton(text="◀️ Выйти в меню", callback_data="menu")],
+    [InlineKeyboardButton(text="🏡 Выйти в меню", callback_data="menu")],
 ])
